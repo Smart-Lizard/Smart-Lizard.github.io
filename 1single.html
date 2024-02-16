@@ -1,0 +1,16 @@
+
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/4.17.0/gradio.js"
+></script>
+
+<gradio-app src="https://kani2904-deeplearninglesson2.hf.space"></gradio-app>
+
+<script type="module">
+	function handleLoadComplete() {
+		console.log("Embedded space has finished rendering");
+	}
+
+	const gradioApp = document.querySelector("gradio-app");
+	gradioApp.addEventListener("render", handleLoadComplete);
+</script>
